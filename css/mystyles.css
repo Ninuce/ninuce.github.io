@@ -1,0 +1,272 @@
+/*------BODY-------*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: grey;
+  /*background-image: url("image.svg");*/
+  /*background-size: 100%;*/
+  /*background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;*/
+}
+
+.wrapper {
+  background-color: white;
+  width: 100%;
+  margin: 0px auto;
+}
+/*------End of BODY-------*/
+
+
+/*-----------------General FONTS-----------------*/
+
+@font-face {
+  font-family: "font1";
+  src: url("../fonts/Bevan.ttf");
+}
+
+h1 {
+  font-family: font1, arial;
+  color: white;
+}
+
+h2 {
+  font-family: font1, arial;
+}
+
+h3 {
+  font-family: font1, arial;
+  color: white;
+}
+
+p {
+  color: DimGray;
+  font-family: font1, arial;
+}
+
+/*-----------------End of General FONTS-----------------*/
+
+
+
+/*-------HEADER-------*/
+
+header {
+  background-color: black;
+  width: 100%;
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 12%;
+  height: 100vh;
+  min-height: 730px;
+}
+
+header h1 {
+    margin: -80px 60px auto;
+    font-family: font1, Averta, Avenir, Arial;
+    font-weight: bold;
+    font-size: 9rem;
+    text-align: left;
+}
+
+header h3 {
+    font-family: font1, Averta, Avenir, Arial;
+    margin: 0px 60px;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    font-weight: 100;
+    padding-top: 1.5rem;
+    text-align: left;
+}
+
+/*-------End of HEADER-------*/
+
+
+/*----------------OFFER----------*/
+
+.offer-border {
+width:100%;
+display: block;
+height:3rem;
+background: #3E434B;
+border-top: solid #303434 1rem;
+}
+
+#theGrid {
+  width: 100%;
+  background-color: black;
+  height:32rem;
+}
+
+.content-row {
+ width: 65%;
+ margin: auto;
+ padding: 2.2rem .5rem;
+ display: block;
+}
+
+.inner-left {
+  width: 35%;
+  float: left;
+  display: block;
+  text-align: left;
+  color: white;
+  position: relative;
+}
+
+.inner-right {
+  width: 60%;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.special-text {
+  font-size: 3.8rem;
+  margin: 0px ;
+  color: #00BEA4;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.regular-text {
+  position: absolute;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5rem;
+  bottom: -75px;
+  padding-left: 5px;
+}
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+/*-------End of OFFER-------*/
+
+
+
+/*-------------AFTERGRID-----------*/
+
+  #afterGrid {
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #303434;
+    color: white;
+    margin: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  .check-out {
+    background-color: white;
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 0px;
+    text-decoration: none;
+    color: DimGray;
+    font-family: font1;
+    cursor: pointer;
+  }
+
+  #afterGrid h3 {
+    margin: 0 0 1.5rem 0;
+  }
+
+/*-------------End of AFTERGRID-----------*/
+
+
+
+/*-------------FOOTER-----------*/
+footer {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+footer h3 {
+
+  color: silver;
+
+}
+footer p {
+    color: black;
+    padding: 0rem .2rem 2rem .2rem;
+}
+
+/*-------------End of FOOTER-----------*/
+
+
+
+/*-------------MEDIA-----------*/
+
+@media (max-width: 768px) {
+  header {
+    height: 100vh;
+    min-height: 400px;
+    max-height: 615px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0px 60px;
+  }
+
+  #theGrid {
+    width: 100%;
+    height: 24rem;
+    padding-top: 15px;
+  }
+
+  .content-row {
+    width: 98%;
+    margin: auto;
+    text-align: left;
+    min-height: 6rem;
+    padding-top: .6rem;
+  }
+
+  .inner-right,
+  .inner-left {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .regular-text {
+    font-size: .8rem;
+    bottom: 0px;
+    position: relative;
+  }
+
+  .special-text {
+    font-size: 1.2rem;
+     margin-right: 10px;
+     text-align: left;
+  }
+}
+
+
+@media (min-width: 769px), (max-width: 1024px) {
+  .content-row {
+  width: 90%;
+  margin: auto;
+  display: block;
+  }
+
+
+@media (min-width: 1025px) {
+  .content-row {
+  width: 70%;
+  margin: auto;
+  display: block;
+  }
+}
+
+/*-------------End of MEDIA-----------*/
