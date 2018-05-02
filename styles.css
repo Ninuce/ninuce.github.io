@@ -21,12 +21,13 @@ header {
 
 h1 {
 	margin: 0;
+	padding: 50px 10px 40px;
 	color: #d25299;
 	font-family: "Bevan", Averta, Avenir, Arial;
 	font-size: 64px;
 	font-weight: bold;
 	line-height: 66px;
-	text-align: left;
+	text-align: center;
 	text-shadow: 2px 2px #dd9ec0;
 }
 
@@ -50,13 +51,6 @@ h3 {
 
 .round {
 	border-radius: 50%;
-}
-
-.heading-cont {
-	display: flex;
-	padding: 50px 10px 40px;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .container {
